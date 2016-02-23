@@ -1,0 +1,23 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Nancy.MediatR.Tests Class Library",
+  "authors": [ "T500010003" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "dependencies": {
+    "xunit": "2.1.0",
+    "xunit.runner.dnx": "2.1.0-*",
+    "Nancy.MediatR": "1.0.0-*",
+    "Nancy.Testing": "1.4.1",
+    "Moq": "4.2.1507.118",
+    "FluentAssertions": "4.2.2"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  },
+  "commands": {
+    "test": "xunit.runner.dnx -xml TestResults.xml"
+      }
+}
