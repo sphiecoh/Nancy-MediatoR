@@ -79,3 +79,5 @@ if (-not $?)
 	throw "The DNU pack process returned an error code."
 }
 }
+#restore location to root folder
+Set-Location $workingDir
