@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nancy.MediatR", "src\Nancy.MediatR\Nancy.MediatR.xproj", "{B73CC76A-EE69-4EDB-A835-FF2B5765FE10}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nancy.MediatR.Tests", "src\Nancy.MediatR.Tests\Nancy.MediatR.Tests.xproj", "{8814C441-8E5D-41EB-961F-B39AAF194A95}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nancy.MediatR.Tests", "test\Nancy.MediatR.Tests\Nancy.MediatR.Tests.xproj", "{8814C441-8E5D-41EB-961F-B39AAF194A95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
