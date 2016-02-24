@@ -2934,7 +2934,7 @@
   "libraries": {
     "Nancy.MediatR/1.0.0": {
       "type": "project",
-      "path": "../Nancy.MediatR/project.json"
+      "path": "../../src/Nancy.MediatR/project.json"
     },
     "CsQuery/1.3.3": {
       "type": "package",

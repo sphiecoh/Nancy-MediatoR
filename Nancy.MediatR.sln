@@ -14,6 +14,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nancy.MediatR", "src\Nancy.
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nancy.MediatR.Tests", "test\Nancy.MediatR.Tests\Nancy.MediatR.Tests.xproj", "{8814C441-8E5D-41EB-961F-B39AAF194A95}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{252FD5F5-B3D1-4FDF-A6AD-54A8DE4993C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B73CC76A-EE69-4EDB-A835-FF2B5765FE10} = {23E73CAB-0FB9-48C5-9B85-4A44F2506EE8}
-		{8814C441-8E5D-41EB-961F-B39AAF194A95} = {23E73CAB-0FB9-48C5-9B85-4A44F2506EE8}
+		{8814C441-8E5D-41EB-961F-B39AAF194A95} = {252FD5F5-B3D1-4FDF-A6AD-54A8DE4993C3}
 	EndGlobalSection
 EndGlobal
