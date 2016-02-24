@@ -2,7 +2,7 @@
 using Nancy.MediatR.Messages;
 using Nancy.ModelBinding;
 using Microsoft.Extensions.Logging;
-using Microsoft.Framework.ConfigurationModel;
+
 
 
 namespace Nancy.MediatR.Modules

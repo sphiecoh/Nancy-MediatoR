@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Nancy.Bootstrapper;
+﻿using Nancy.Bootstrapper;
 using StructureMap;
 using Nancy.MediatR.Messages;
 using MediatR;
 using Serilog;
 using Microsoft.Extensions.Logging;
-using Microsoft.Framework.ConfigurationModel;
 using Microsoft.AspNet.Hosting;
 using Microsoft.Extensions.PlatformAbstractions;
 using Raven.Client.Document;
 using Raven.Client;
+using Microsoft.Extensions.Configuration;
 
 namespace Nancy.MediatR
 {
@@ -31,8 +27,8 @@ namespace Nancy.MediatR
             var factory = new LoggerFactory();
             var logger = new LoggerConfiguration().WriteTo.LiterateConsole().CreateLogger();
             factory.AddSerilog(logger);
-            var config = new Configuration(appEnv.ApplicationBasePath).AddJsonFile("appsettings.json").AddJsonFile($"config.{env.EnvironmentName}.json", optional: true);
-            config.AddEnvironmentVariables();
+            var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").AddJsonFile($"config.{env.EnvironmentName}.json", optional: true).Build();
+           
            
                 container.Configure(registry => registry.Scan(scanner => {
                 scanner.AssemblyContainingType<Ping>();
