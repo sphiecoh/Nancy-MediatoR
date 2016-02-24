@@ -13,7 +13,7 @@
     "Nancy.BootStrappers.StructureMap": "1.4.3",
     "Serilog.Extensions.Logging": "1.0.0-rc1-final-10092",
     "Serilog.Sinks.Literate": "2.0.0-beta-21",
-    "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta5-11337",
+    "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
     "RavenDB.Client": "3.0.30037"
   },
 
