@@ -56,7 +56,7 @@ foreach($project in $projects)
 # Set the copyright
 $DateYear = (Get-Date).year
 (gc -Path $project) `
-	-replace "(?<=`"copyright`":\s`")[\w\s©]*(?=`",)", "Copyright © Sifiso Shezi $DateYear" |
+	-replace "(?<=`"copyright`":\s`")[\w\sÂ©]*(?=`",)", "Copyright Â© Sifiso Shezi $DateYear" |
 	sc -Path $project -Encoding UTF8
 
 # Build the proj in release mode
@@ -78,6 +78,13 @@ if (-not $?)
 {
 	throw "The DNU pack process returned an error code."
 }
+
+& $DNU publish 2>&1 
+if (-not $?)
+{
+	throw "The DNU publish process returned an error code."
+}
+
 }
 #restore location to root folder
 Set-Location $workingDir
