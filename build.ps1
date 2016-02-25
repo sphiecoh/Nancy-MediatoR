@@ -79,11 +79,11 @@ if (-not $?)
 	throw "The DNU pack process returned an error code."
 }
 
-& $DNU publish 2>&1 
-if (-not $?)
-{
-	throw "The DNU publish process returned an error code."
-}
+#& $DNU publish 2>&1 
+#if (-not $?)
+#{
+	#throw "The DNU publish process returned an error code."
+#}
 
 }
 #restore location to root folder
